@@ -12,7 +12,7 @@
             <!-- Left Links -->
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="projects.html" class="active">PROJECTS</a></li>
             </ul>
 
             <!-- Centered Logo / Name -->
@@ -31,22 +31,233 @@
 
         <!-- Project 1 Full Details -->
         <div id="project-1" class="project-detail">
-            <h3>Project Title 1</h3>
-            <!-- <img src="images/project1-full.jpg" alt="Full CAD Render" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px;"> -->
-            <p><strong>The Challenge:</strong> Describe the mechanical problem you were trying to solve here.</p>
-            <p><strong>The Solution:</strong> Explain your CAD process, material selection, and how you manufactured the prototype.</p>
-            <p><strong>Tools Used:</strong> SolidWorks, 3D Printing, Calipers.</p>
+            <h3>Modular Robotic Cartridge Packaging Tool</h3>
+            <p class="project-date">July - August 2026</p>
+            <p><strong>Project Overview:</strong> Created a robotic solution to package bullet cartridges ranging from .22 to .408 size in a grid pattern in 4 different sized retail boxes, while avoiding scratches on parts.</p>
+            
+            <p><strong>Contributions:</strong></p>
+            <ul>
+                <li>Designed, iterated, and manufactured EOAT to:</li>
+                <li>Stage singulated cartridges in a variable-size holding ramp, then release in rows of 5 into gridded containers</li>
+                <li>Avoid gripping parts to minimize scratching</li>
+                <li>Developed modular part interface with quick-release to swap between container sizes</li>
+            </ul>
+            
+            <p><strong>Tools Used:</strong> SolidWorks, Ultimaker 3D Printers, Denso SCARA Robot</p>
+            
+            <div class="media-gallery">
+                <!-- Row 1 -->
+                <div class="media-row">
+                    
+                    <figure class="media-item" style="flex: 1;">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/peterson.MOV" type="video/mp4">
+                        </video> 
+                        <figcaption>Packaging demo using .22 cartridges and the smallest box</figcaption>
+                    </figure>
+                </div>
+                <!-- Row 2 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 0.9843 1 0%;">
+                        <img src="images/peterson/408-test.JPG">
+                        <figcaption>Fit test with .408 cartridges</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 2.8258 1 0%;">
+                        <img src="images/peterson/prog.JPG">
+                        <figcaption>Progression (left to right) of cartridge ramp designs</figcaption>
+                    </figure>
+                </div>
+
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1.081 1 0%;">
+                        <img src="images/peterson/thumb.JPG" alt="Final exploded cartridge ramp">
+                        <figcaption>Final tool installed on Denso SCARA</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.4 1 0%;">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/peterson-explosion.mp4" type="video/mp4">
+                        </video> 
+                        <figcaption>Tool CAD broken up to be machined from acetal on 3-axis CNC mill</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
         
-        <hr> <!-- This adds a horizontal dividing line between projects -->
-        
+        <hr>
+
         <!-- Project 2 Full Details -->
         <div id="project-2" class="project-detail">
-            <h3>Project Title 2</h3>
-            <!-- <img src="images/project2-full.jpg" alt="FEA Simulation" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px;"> -->
-            <p><strong>The Challenge:</strong> Describe the stress or thermal problem.</p>
-            <p><strong>The Solution:</strong> Explain your simulation setup, meshing, and iterations.</p>
-            <p><strong>Tools Used:</strong> ANSYS, Python.</p>
+            <h3>Robotic Bin-Picking & Drill Press Tending Cell</h3>
+            <p class="project-date">May - July 2026</p>
+            <p><strong>Project Overview:</strong> Created a robotic cell to retrieve cast steel rail clips from a large bin and fixture them under a drill press, reducing ergonomic strain on the drill press operator.</p>
+            
+            <p><strong>Contributions:</strong></p>
+            <ul>
+                <li>Integrated a FANUC CRX-20 with Apera AI vision to bin-pick parts</li>
+                <li>Designed and implemented pneumatic rotary table to flip part if optimal pick is impossible</li>
+                <li>Designed and manufactured a pneumatic vise with embedded magnets to position part repeatably after picking</li>
+                <li>Implemented pose-checking algorithms to correct for imprecise part position from electromagnetic picking</li>
+            </ul>
+            
+            <p><strong>Tools Used:</strong> SolidWorks, Ultimaker 3D Printers, FANUC CRX-20</p>
+            
+            <div class="media-gallery">
+                <!-- Row 1 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1.333;">
+                        <img src="images/molyneux/thumb.JPG">
+                        <figcaption>Complete cell, including cobot, drill press, stereo camera, linear rail, and fixtures</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.333;">
+                       <img src="images/molyneux/fixtures.JPG">
+                        <figcaption>Fabricated fixtures integrated with cell</figcaption>
+                    </figure>
+                </div>
+                <!-- Row 2 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1.333;">
+                        <img src="images/molyneux/vise-cad.png">
+                        <figcaption>CAD for pneumatic vice mounted on linear rail carriage</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.4925;">
+                        <img src="images/molyneux/magnets.png">
+                        <figcaption>Magnets embedded in pneumatic vise to assist part placement</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.0689;">
+                        <img src="images/molyneux/flip-cad.png">
+                        <figcaption>CAD for rotating fixture to regrip parts</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Project 3 Full Details -->
+        <div id="project-3" class="project-detail">
+            <h3>ME 2110 Competition Robot</h3>
+            <p class="project-date">September - November 2025</p>
+            <p><strong>Project Overview:</strong> Created a robotic system to compete in an arena-style competition.</p>
+            
+            <p><strong>Contributions:</strong></p>
+            <ul>
+                <li>Designed/fabricated telescoping arm to extend robot height 2.5x</li>
+                <li>Created scissor-linkage arms to sweep game pieces to target</li>
+                <li>Integrated teammates' subsystems with main robot chassis</li>
+                <li>Programmed state machine logic and robot program flow</li>
+            </ul>
+            
+            <p><strong>Tools Used:</strong> SolidWorks, Bambu Labs 3D Printers, Laser Cutters, Arduino/C++</p>
+            
+            <div class="media-gallery">
+                <!-- Row 1 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1;">
+                        <video autoplay loop muted playsinline>
+                            <source src="videos/me2110.mov" type="video/mp4">
+                        </video> 
+                        <figcaption>Design sprint test before final competition</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 0.75;">
+                        <img src="images/me2110/extension.jpg">
+                        <figcaption>Telescoping arm fully extended</figcaption>
+                    </figure>
+                </div>
+                <!-- Row 2 (Single item will stretch to fill row, or constrain via flex value) -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1.302;">
+                        <img src="images/me2110/cross-section.png">
+                        <figcaption>Cross-section of final CAD, showing nested telescoping segments</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.333;">
+                        <img src="images/me2110/scissor-extension.jpg">
+                        <figcaption>Scissor linkage sweeper arms extended</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Project 4 Full Details -->
+        <div id="project-4" class="project-detail">
+            <h3>Cosmic Constructors</h3>
+            <p class="project-date">September - December 2024</p>
+            <p><strong>Project Overview:</strong> In a team of 5, modeled a concept for a robot to place pipes and other structural elements in space. The concept places pipes end-to-end and walks along previous construction.</p>
+            
+            <p><strong>Contributions:</strong></p>
+            <ul>
+                <li>Modeled hopper-feeder assembly that ejects pipes one at a time to be placed by placer arm</li>
+                <li>Modeled robot chassis to integrate with teammates' models</li>
+                <li>Created renderings using SolidWorks Visualize of final assembly</li>
+            </ul>
+            
+            <p><strong>Tools Used:</strong> SolidWorks, SolidWorks Visualize</p>
+            
+            <div class="media-gallery">
+                <!-- Row 1 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1.333;">
+                        <img src="images/cosmic-constructors/thumb.png">
+                        <figcaption>Rendering of robot retrieving a pipe from the hopper/feeder</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.776;">
+                        <img src="images/cosmic-constructors/underview.png">
+                        <figcaption>Underside view of robot walking along pipe</figcaption>
+                    </figure>
+                </div>
+                <!-- Row 2 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1;">
+                        <img src="images/cosmic-constructors/hopper-collapse.gif">
+                        <figcaption>Hopper/feeder subassembly collapse</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1;">
+                        <img src="images/cosmic-constructors/grip.png">
+                        <figcaption>Rendering of interior of hopper/feeder</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Project 5 Full Details -->
+        <div id="project-5" class="project-detail">
+            <h3>OctoGifts</h3>
+            <p class="project-date">January 2019 - December 2021</p>
+            <p><strong>Project Overview:</strong> OctoGifts was an e-commerce business I ran from 2019 to 2021, selling paper candy dispensers I designed and packaged in DIY kits. These machines doubled as greeting cards with a space on the back for a message.</p>
+            
+            <p><strong>Patents:</strong></p>
+            <ul>
+                <li>"Apparatus for Dispensing Objects and Method." Flores, S. US Patent No. US 11,254,486 B2, issued February 22, 2022.</li>
+                <li>"Object Dispenser." Flores, S. US Patent No. US D923,419 S, issued June 29, 2021.</li>
+            </ul>
+            
+            <div class="media-gallery">
+                <!-- Row 1 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 0.945;">
+                        <img src="images/octogifts/thumb.jpg">
+                        <figcaption>Base dispenser model, with seasonal options sold as modular add-ons</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 2.328;">
+                        <img src="images/octogifts/dial.JPG">
+                        <figcaption>Interlocking sets of tabs and slots to reinforce glued joints (patented method)</figcaption>
+                    </figure>
+                </div>
+                <!-- Row 2 -->
+                <div class="media-row">
+                    <figure class="media-item" style="flex: 1.333;">
+                        <img src="images/octogifts/interior.jpg">
+                        <figcaption>Internal chamber with ramps to guide dispensed candy toward opening</figcaption>
+                    </figure>
+                    <figure class="media-item" style="flex: 1.333;">
+                        <img src="images/octogifts/lineup.JPG">
+                        <figcaption>Full product lineup</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
 
