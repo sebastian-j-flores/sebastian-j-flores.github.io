@@ -80,7 +80,7 @@ nav a.active {
     width: 100%; 
     max-width: var(--max-width);
     margin: 3rem auto; /* Slightly reduced from 4rem for a tighter look across all pages */
-    padding: 0 4rem; 
+    padding: 0 2rem; 
 }
 
 .hero-content + .page-content {
@@ -313,6 +313,14 @@ footer {
     /* ADD THIS NEW RULE: */
     .project-grid {
         grid-template-columns: 1fr; /* Forces a single column on small screens */
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-img {
+        width: 100%;
     }
 
     /* Add this inside your existing mobile @media block */
